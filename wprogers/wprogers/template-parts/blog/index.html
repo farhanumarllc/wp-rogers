@@ -1,0 +1,3643 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blog &#8211; Daisy</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    </style>
+    <noscript
+      ><style>
+        #preloader {
+          display: none;
+        }
+      </style></noscript
+    >
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Daisy &raquo; Feed"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Daisy &raquo; Comments Feed"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/comments/feed/"
+    />
+    <script>
+      /* <![CDATA[ */
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/radiustheme.com\/demo\/wordpress\/themes\/daisy\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2",
+        },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83d\udc26\u200d\u2b1b",
+                "\ud83d\udc26\u200b\u2b1b"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+      /* ]]> */
+    </script>
+    <style id="wp-emoji-styles-inline-css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-includes/css/dist/block-library/style.min.css?ver=6.7.2"
+      media="all"
+    />
+    <style id="wp-block-library-theme-inline-css">
+      .wp-block-audio :where(figcaption) {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-audio :where(figcaption) {
+        color: #ffffffa6;
+      }
+      .wp-block-audio {
+        margin: 0 0 1em;
+      }
+      .wp-block-code {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Menlo, Consolas, monaco, monospace;
+        padding: 0.8em 1em;
+      }
+      .wp-block-embed :where(figcaption) {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-embed :where(figcaption) {
+        color: #ffffffa6;
+      }
+      .wp-block-embed {
+        margin: 0 0 1em;
+      }
+      .blocks-gallery-caption {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .blocks-gallery-caption {
+        color: #ffffffa6;
+      }
+      :root :where(.wp-block-image figcaption) {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme :root :where(.wp-block-image figcaption) {
+        color: #ffffffa6;
+      }
+      .wp-block-image {
+        margin: 0 0 1em;
+      }
+      .wp-block-pullquote {
+        border-bottom: 4px solid;
+        border-top: 4px solid;
+        color: currentColor;
+        margin-bottom: 1.75em;
+      }
+      .wp-block-pullquote cite,
+      .wp-block-pullquote footer,
+      .wp-block-pullquote__citation {
+        color: currentColor;
+        font-size: 0.8125em;
+        font-style: normal;
+        text-transform: uppercase;
+      }
+      .wp-block-quote {
+        border-left: 0.25em solid;
+        margin: 0 0 1.75em;
+        padding-left: 1em;
+      }
+      .wp-block-quote cite,
+      .wp-block-quote footer {
+        color: currentColor;
+        font-size: 0.8125em;
+        font-style: normal;
+        position: relative;
+      }
+      .wp-block-quote:where(.has-text-align-right) {
+        border-left: none;
+        border-right: 0.25em solid;
+        padding-left: 0;
+        padding-right: 1em;
+      }
+      .wp-block-quote:where(.has-text-align-center) {
+        border: none;
+        padding-left: 0;
+      }
+      .wp-block-quote.is-large,
+      .wp-block-quote.is-style-large,
+      .wp-block-quote:where(.is-style-plain) {
+        border: none;
+      }
+      .wp-block-search .wp-block-search__label {
+        font-weight: 700;
+      }
+      .wp-block-search__button {
+        border: 1px solid #ccc;
+        padding: 0.375em 0.625em;
+      }
+      :where(.wp-block-group.has-background) {
+        padding: 1.25em 2.375em;
+      }
+      .wp-block-separator.has-css-opacity {
+        opacity: 0.4;
+      }
+      .wp-block-separator {
+        border: none;
+        border-bottom: 2px solid;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .wp-block-separator.has-alpha-channel-opacity {
+        opacity: 1;
+      }
+      .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+        width: 100px;
+      }
+      .wp-block-separator.has-background:not(.is-style-dots) {
+        border-bottom: none;
+        height: 1px;
+      }
+      .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+        height: 2px;
+      }
+      .wp-block-table {
+        margin: 0 0 1em;
+      }
+      .wp-block-table td,
+      .wp-block-table th {
+        word-break: normal;
+      }
+      .wp-block-table :where(figcaption) {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-table :where(figcaption) {
+        color: #ffffffa6;
+      }
+      .wp-block-video :where(figcaption) {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-video :where(figcaption) {
+        color: #ffffffa6;
+      }
+      .wp-block-video {
+        margin: 0 0 1em;
+      }
+      :root :where(.wp-block-template-part.has-background) {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 1.25em 2.375em;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css">
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--color--daisy-primary: #f85c70;
+        --wp--preset--color--daisy-secondary: #061526;
+        --wp--preset--color--daisy-light: #ffffff;
+        --wp--preset--color--daisy-black: #000000;
+        --wp--preset--color--daisy-dark: #101213;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 12px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--font-size--normal: 16px;
+        --wp--preset--font-size--huge: 50px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="meks_instagram-widget-styles-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/plugins/meks-easy-instagram-widget/css/widget.css?ver=6.7.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="daisy-core-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/plugins/daisy-core/assets/css/daisy-core.css?ver=6.7.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="daisy-gfonts-css"
+      href="//fonts.googleapis.com/css?family=Roboto%3A300%2C500%2C700%2C400%7CPoppins%3A300%2C500%2C600%2C700%2C600&#038;display=fallback&#038;ver=1.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bootstrap-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/css/bootstrap.min.css?ver=1.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="font-awesome-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/css/all.min.css?ver=1.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="icomoon-svg-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/css/icomoon-svg.css?ver=1.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="animate-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/css/animate.min.css?ver=1.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="magnific-popup-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/css/magnific-popup.css?ver=1.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="daisy-default-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/css/default.css?ver=1.0"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="daisy-style-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/css/style.css?ver=1.0"
+      media="all"
+    />
+    <style id="daisy-dynamic-inline-css">
+      .inner-banner {
+        background-image: url(https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/01/blog-1-bg.jpg);
+      }
+      .inner-banner:after {
+        background-color: #000000;
+      }
+      .inner-banner:after {
+        opacity: 0.7;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        font-weight: normal;
+        font-style: normal;
+      }
+      .main-menu ul li > a {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .main-menu ul li ul.sub-menu li a {
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        line-height: 1.75;
+        font-weight: 500;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+      }
+      h1 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+      }
+      h1 {
+        font-size: 48px;
+        line-height: 1.4;
+        font-style: normal;
+      }
+      h2 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+      }
+      h2 {
+        font-size: 40px;
+        line-height: 1.4;
+        font-style: normal;
+      }
+      h3 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 32px;
+        line-height: 1.4;
+        font-style: normal;
+      }
+      h4 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 24px;
+        line-height: 1.4;
+        font-style: normal;
+      }
+      h5 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+      }
+      h5 {
+        font-size: 20px;
+        line-height: 1.4;
+        font-style: normal;
+      }
+      h6 {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+      }
+      h6 {
+        font-size: 18px;
+        line-height: 1.4;
+        font-style: normal;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+      id="jquery-migrate-js"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-json/"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 6.7.2" />
+    <meta
+      name="generator"
+      content="Elementor 3.24.2; settings: css_print_method-external, google_font-enabled, font_display-auto"
+    />
+    <style>
+      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload)
+        * {
+        background-image: none !important;
+      }
+      @media screen and (max-height: 1024px) {
+        .e-con.e-parent:nth-of-type(n
+            + 3):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n
+            + 3):not(.e-lazyloaded):not(.e-no-lazyload)
+          * {
+          background-image: none !important;
+        }
+      }
+      @media screen and (max-height: 640px) {
+        .e-con.e-parent:nth-of-type(n
+            + 2):not(.e-lazyloaded):not(.e-no-lazyload),
+        .e-con.e-parent:nth-of-type(n
+            + 2):not(.e-lazyloaded):not(.e-no-lazyload)
+          * {
+          background-image: none !important;
+        }
+      }
+    </style>
+    <link
+      rel="icon"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/favicon.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/favicon.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/favicon.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/favicon.png"
+    />
+  </head>
+
+  <body
+    class="blog wp-embed-responsive sticky-header transparent-header header-style-5 has-sidebar elementor-default elementor-kit-5"
+  >
+    <!-- Main Wrapper Start -->
+    <div id="wrapper" class="wrapper">
+      <a href="javascript:void(0)" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+
+      <!-- Main Content Start -->
+      <div id="main-content" class="main-content page">
+        <div class="rt-header-menu mobile-sticky-on" id="meanmenu">
+          <div id="mobile-sticky-placeholder"></div>
+          <div class="rt-mobile-menn-bar" id="mobile-menu-bar-wrap">
+            <div class="mean-bar">
+              <div class="logo">
+                <a href="https://radiustheme.com/demo/wordpress/themes/daisy/">
+                  <img
+                    width="180"
+                    height="48"
+                    src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/img/logo-dark.svg"
+                    alt="Daisy"
+                  />
+                </a>
+              </div>
+              <span class="sidebarBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </span>
+            </div>
+            <div class="rt-slide-nav">
+              <div class="offscreen-navigation">
+                <nav class="menu-main-primary-container">
+                  <ul id="menu-main-menu" class="mobile-menu">
+                    <li
+                      id="menu-item-23"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23"
+                    >
+                      <a href="#">Home</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-8188"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8188"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/"
+                            >Personal Portfolio</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-8136"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8136"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/home-2/"
+                            >Creative Agency 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-4431"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4431"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/home-3/"
+                            >Creative Agency 02</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-5050"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5050"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/home-4/"
+                            >Creative Agency 03</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu-item-24"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24"
+                    >
+                      <a href="#">About</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-5484"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5484"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/about-us/"
+                            >About Us 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-5667"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5667"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/about-us-2/"
+                            >About Us 02</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-5668"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5668"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/about-us-3/"
+                            >About us 03</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu-item-25"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25"
+                    >
+                      <a href="#">Service</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-5878"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5878"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/services-1/"
+                            >Service 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-5881"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5881"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/services-2/"
+                            >Service 02</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-5938"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5938"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/services-3/"
+                            >Service 03</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6799"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6799"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/service/digital-marketing/"
+                            >Service Details 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6800"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6800"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/service/product-design/"
+                            >Service Details 02</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu-item-26"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26"
+                    >
+                      <a href="#">Pages</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-9921"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9921"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/team-1/"
+                            >Team 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6578"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6578"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/team-2/"
+                            >Team 02</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-9989"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9989"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/team-3/"
+                            >Team 03</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-9790"
+                          class="menu-item menu-item-type-post_type menu-item-object-daisy_team menu-item-9790"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/team/nevine-acotanza-4-3/"
+                            >Team Details</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-8189"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8189"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/typography/"
+                            >Typography</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6305"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6305"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/404.php"
+                            >404 error</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu-item-27"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27"
+                    >
+                      <a href="#">Portfolio</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-10001"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10001"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolios/"
+                            >Portfolio 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6333"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6333"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-2/"
+                            >Portfolio 02</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-8584"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8584"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-33/"
+                            >Portfolio 03</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-8583"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8583"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-4/"
+                            >Portfolio 04</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-8582"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8582"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-5/"
+                            >Portfolio 05</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-8581"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8581"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-6/"
+                            >Portfolio 06</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-9789"
+                          class="menu-item menu-item-type-post_type menu-item-object-daisy_portfolio menu-item-9789"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio/web-design/"
+                            >Portfolio Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu-item-28"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28"
+                    >
+                      <a href="#">Pricing</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-6065"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6065"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/pricing/"
+                            >Pricing 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6066"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6066"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/pricing-2/"
+                            >Pricing 02</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6076"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6076"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/pricing-3/"
+                            >Pricing 03</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu-item-29"
+                      class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-29"
+                    >
+                      <a href="#">Blog</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-6092"
+                          class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-462 current_page_item current_page_parent menu-item-6092"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/blog/"
+                            aria-current="page"
+                            >Blog 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-10011"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10011"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/blog-2/"
+                            >Blog 02</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6407"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6407"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/blog-3/"
+                            >Blog 03</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6412"
+                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6412"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-2/"
+                            >Blog Deatils 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6413"
+                          class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6413"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-3/"
+                            >Blog Deatils 02</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      id="menu-item-47"
+                      class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47"
+                    >
+                      <a href="#">Contact</a>
+                      <ul class="sub-menu">
+                        <li
+                          id="menu-item-6200"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6200"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/contact/"
+                            >Contact 01</a
+                          >
+                        </li>
+                        <li
+                          id="menu-item-6199"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6199"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/contact-2/"
+                            >Contact 02</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <header
+          class="header header--style-5 d-none d-xl-block sticky-on trheader"
+        >
+          <div class="sticky-placeholder" id="sticky-placeholder"></div>
+          <div class="topbar-wrap topbar-wrap--style-1" id="topbar-wrap">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <ul class="infolist infolist--style-1">
+                    <li class="infolist__item">
+                      <i class="fas fa-envelope"></i>
+                      <a href="mailto:info@demo.com" class="infolist__link"
+                        >info@demo.com</a
+                      >
+                    </li>
+                    <li class="infolist__item phone">
+                      <i class="fas fa-phone-volume"></i>
+                      <a href="tel:+1104536902" class="infolist__link"
+                        >+11 045 369 02</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6">
+                  <ul class="social social--style-4">
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-pinterest-p"></i>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-wrap" id="navbar-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="menu-area style-1 d-flex align-items-center justify-content-between flex-wrap"
+                  >
+                    <ul class="logo-offcanvas-btn-list">
+                      <li
+                        class="humburger humburger--style-2 modify-one offcanvas-menu-btn menu-status-open"
+                      >
+                        <div class="inner-box">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="logo">
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/"
+                            class="logo logo-dark"
+                          >
+                            <img
+                              width="180"
+                              height="48"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/img/logo-dark.svg"
+                              alt="Daisy"
+                          /></a>
+
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/"
+                            class="logo logo-light"
+                          >
+                            <img
+                              width="180"
+                              height="48"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/img/logo-light.svg"
+                              alt="Daisy"
+                            />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- end logo -->
+                    <nav class="main-menu main-menu--style--3">
+                      <div id="site-navigation" class="main-navigation">
+                        <ul id="menu-main-menu-1" class="menu nav">
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23"
+                          >
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8188"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/"
+                                  >Personal Portfolio</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8136"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/home-2/"
+                                  >Creative Agency 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4431"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/home-3/"
+                                  >Creative Agency 02</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5050"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/home-4/"
+                                  >Creative Agency 03</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24"
+                          >
+                            <a href="#">About</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5484"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/about-us/"
+                                  >About Us 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5667"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/about-us-2/"
+                                  >About Us 02</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5668"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/about-us-3/"
+                                  >About us 03</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25"
+                          >
+                            <a href="#">Service</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5878"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/services-1/"
+                                  >Service 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5881"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/services-2/"
+                                  >Service 02</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5938"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/services-3/"
+                                  >Service 03</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6799"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/service/digital-marketing/"
+                                  >Service Details 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6800"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/service/product-design/"
+                                  >Service Details 02</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26"
+                          >
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9921"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/team-1/"
+                                  >Team 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6578"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/team-2/"
+                                  >Team 02</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9989"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/team-3/"
+                                  >Team 03</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-daisy_team menu-item-9790"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/team/nevine-acotanza-4-3/"
+                                  >Team Details</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8189"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/typography/"
+                                  >Typography</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6305"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/404.php"
+                                  >404 error</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27"
+                          >
+                            <a href="#">Portfolio</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10001"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolios/"
+                                  >Portfolio 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6333"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-2/"
+                                  >Portfolio 02</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8584"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-33/"
+                                  >Portfolio 03</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8583"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-4/"
+                                  >Portfolio 04</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8582"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-5/"
+                                  >Portfolio 05</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8581"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio-6/"
+                                  >Portfolio 06</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-daisy_portfolio menu-item-9789"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/portfolio/web-design/"
+                                  >Portfolio Details</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28"
+                          >
+                            <a href="#">Pricing</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6065"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/pricing/"
+                                  >Pricing 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6066"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/pricing-2/"
+                                  >Pricing 02</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6076"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/pricing-3/"
+                                  >Pricing 03</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-29"
+                          >
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-462 current_page_item current_page_parent menu-item-6092"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/blog/"
+                                  aria-current="page"
+                                  >Blog 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10011"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/blog-2/"
+                                  >Blog 02</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6407"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/blog-3/"
+                                  >Blog 03</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6412"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-2/"
+                                  >Blog Deatils 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-6413"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-3/"
+                                  >Blog Deatils 02</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47"
+                          >
+                            <a href="#">Contact</a>
+                            <ul class="sub-menu">
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6200"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/contact/"
+                                  >Contact 01</a
+                                >
+                              </li>
+                              <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6199"
+                              >
+                                <a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/contact-2/"
+                                  >Contact 02</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <ul
+                        class="header-action header-action--style-5 d-none d-xl-flex"
+                      >
+                        <li
+                          class="header-action__item header-action__item--search"
+                        >
+                          <a href="#template-search">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="18.344"
+                              height="19"
+                              viewBox="0 0 18.344 19"
+                            >
+                              <path
+                                data-name="search (5)"
+                                d="M19.049,17.306l-4.522-4.7a7.668,7.668,0,1,0-5.872,2.74,7.589,7.589,0,0,0,4.395-1.388l4.556,4.739a1,1,0,1,0,1.442-1.387ZM8.655,2a5.67,5.67,0,1,1-5.67,5.67A5.676,5.676,0,0,1,8.655,2Z"
+                                transform="translate(-0.984)"
+                                fill="#0f285f"
+                                opacity="0.85"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="header-action__item">
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/contact/"
+                            class="rt-btn--14"
+                          >
+                            CONTACT US
+                            <div class="icon--4">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="10"
+                                viewBox="0 0 22 10"
+                              >
+                                <g
+                                  data-name="Group 565"
+                                  transform="translate(-367 -742)"
+                                >
+                                  <path
+                                    data-name="Polygon 8"
+                                    d="M5,0l5,8H0Z"
+                                    transform="translate(389 742) rotate(90)"
+                                    fill="#fff"
+                                  ></path>
+                                  <rect
+                                    data-name="Rectangle 240"
+                                    width="14"
+                                    height="2"
+                                    transform="translate(367 746)"
+                                    fill="#fff"
+                                  ></rect>
+                                </g>
+                              </svg>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="template-search" class="template-search">
+              <button type="button" class="close">×</button>
+              <form
+                class="search-form"
+                method="get"
+                action="https://radiustheme.com/demo/wordpress/themes/daisy/"
+              >
+                <input
+                  type="search"
+                  name="s"
+                  value=""
+                  placeholder="Enter Your Search....."
+                />
+                <button type="submit" class="search-btn btn-ghost style-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18.344"
+                    height="19"
+                    viewBox="0 0 18.344 19"
+                  >
+                    <path
+                      data-name="search (5)"
+                      d="M19.049,17.306l-4.522-4.7a7.668,7.668,0,1,0-5.872,2.74,7.589,7.589,0,0,0,4.395-1.388l4.556,4.739a1,1,0,1,0,1.442-1.387ZM8.655,2a5.67,5.67,0,1,1-5.67,5.67A5.676,5.676,0,0,1,8.655,2Z"
+                      transform="translate(-0.984)"
+                      fill="#0f285f"
+                      opacity="0.85"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div
+          class="inner-banner inner-banner--style-1 overflow-hidden layout-default"
+          data-bg-image="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/01/blog-1-bg.jpg"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="inner-banner-content inner-banner-content--style-1 content-center"
+                >
+                  <h1 class="banner-title">Blog</h1>
+
+                  <div class="breadcrumb-area">
+                    <div class="entry-breadcrumb">
+                      <!-- Breadcrumb NavXT 7.3.1 -->
+                      <span property="itemListElement" typeof="ListItem"
+                        ><a
+                          property="item"
+                          typeof="WebPage"
+                          title="Go to Daisy."
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy"
+                          class="home"
+                          ><span property="name">Home</span></a
+                        ><meta property="position" content="1" /></span
+                      ><span class="dvdr"> / </span
+                      ><span property="itemListElement" typeof="ListItem"
+                        ><span
+                          property="name"
+                          class="post-root post post-post current-item"
+                          >Blog</span
+                        ><meta
+                          property="url"
+                          content="https://radiustheme.com/demo/wordpress/themes/daisy/blog/" /><meta
+                          property="position"
+                          content="2"
+                      /></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--=====================================-->
+        <!--=              Blog Start    	    =-->
+        <!--=====================================-->
+        <section class="blog pt-120 pb-90">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-12">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      id="post-8021"
+                      class="blog-block blog-block--style1 bg-section mb-24 wow fadeInUp post-8021 post type-post status-publish format-standard has-post-thumbnail hentry category-marketing tag-analysis tag-digital tag-technology have-post-thumb"
+                      data-wow-delay="0.5s"
+                      data-wow-duration="1s"
+                    >
+                      <div class="item-img">
+                        <figure
+                          class="blog-block__figure mb-0 position-relative"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-12/"
+                          >
+                            <img
+                              fetchpriority="high"
+                              width="770"
+                              height="420"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/blog2-770x420.jpg"
+                              class="attachment-daisy-thumb1 size-daisy-thumb1 wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </a>
+                          <div class="blog-block__date">
+                            <span>15 Feb</span>
+                            <span>2022</span>
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="blog-block__content">
+                        <div class="blog-block__meta">
+                          <ul class="blog-block__meta__list">
+                            <li>
+                              <span class="blog-block__user"
+                                ><svg
+                                  width="21"
+                                  height="21"
+                                  viewBox="0 0 21 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M10.25 4.53571C9.54364 4.53571 8.85314 4.74517 8.26582 5.13761C7.6785 5.53004 7.22075 6.08782 6.95043 6.74041C6.68012 7.39301 6.60939 8.1111 6.7472 8.80389C6.885 9.49668 7.22515 10.133 7.72462 10.6325C8.22409 11.132 8.86046 11.4721 9.55325 11.6099C10.246 11.7477 10.9641 11.677 11.6167 11.4067C12.2693 11.1364 12.8271 10.6786 13.2195 10.0913C13.612 9.504 13.8214 8.8135 13.8214 8.10714C13.8214 7.15994 13.4452 6.25153 12.7754 5.58176C12.1056 4.91199 11.1972 4.53571 10.25 4.53571ZM10.25 10.25C9.82618 10.25 9.41188 10.1243 9.05949 9.88886C8.7071 9.6534 8.43245 9.31873 8.27026 8.92718C8.10807 8.53562 8.06564 8.10476 8.14832 7.68909C8.231 7.27342 8.43509 6.8916 8.73477 6.59191C9.03446 6.29223 9.41628 6.08814 9.83195 6.00546C10.2476 5.92278 10.6785 5.96521 11.07 6.1274C11.4616 6.28959 11.7963 6.56424 12.0317 6.91663C12.2672 7.26902 12.3929 7.68332 12.3929 8.10714C12.3923 8.67529 12.1663 9.22 11.7646 9.62174C11.3629 10.0235 10.8181 10.2494 10.25 10.25Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M10.25 0.25C8.27219 0.25 6.33879 0.83649 4.6943 1.9353C3.04981 3.03412 1.76809 4.5959 1.01121 6.42316C0.254333 8.25042 0.0562996 10.2611 0.442152 12.2009C0.828004 14.1407 1.78041 15.9225 3.17894 17.3211C4.57746 18.7196 6.35929 19.672 8.2991 20.0578C10.2389 20.4437 12.2496 20.2457 14.0768 19.4888C15.9041 18.7319 17.4659 17.4502 18.5647 15.8057C19.6635 14.1612 20.25 12.2278 20.25 10.25C20.247 7.59876 19.1924 5.05698 17.3177 3.18227C15.443 1.30756 12.9012 0.253025 10.25 0.25ZM5.96429 17.6621V16.6786C5.96486 16.1104 6.1908 15.5657 6.59254 15.164C6.99428 14.7622 7.539 14.5363 8.10715 14.5357H12.3929C12.961 14.5363 13.5057 14.7622 13.9075 15.164C14.3092 15.5657 14.5351 16.1104 14.5357 16.6786V17.6621C13.2351 18.4216 11.7561 18.8218 10.25 18.8218C8.74392 18.8218 7.26488 18.4216 5.96429 17.6621ZM15.9586 16.6257C15.9443 15.6888 15.5626 14.795 14.8956 14.1368C14.2287 13.4787 13.3299 13.1089 12.3929 13.1071H8.10715C7.17013 13.1089 6.27132 13.4787 5.60435 14.1368C4.93739 14.795 4.55567 15.6888 4.54143 16.6257C3.24612 15.4691 2.33267 13.9463 1.92203 12.259C1.51139 10.5718 1.62293 8.79953 2.24189 7.17704C2.86084 5.55455 3.95802 4.15833 5.38813 3.17326C6.81823 2.18819 8.51382 1.66073 10.2504 1.66073C11.9869 1.66073 13.6825 2.18819 15.1126 3.17326C16.5427 4.15833 17.6399 5.55455 18.2588 7.17704C18.8778 8.79953 18.9893 10.5718 18.5787 12.259C18.168 13.9463 17.2539 15.4691 15.9586 16.6257Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/author/admin/"
+                                    title="Posts by admin"
+                                    rel="author"
+                                    >admin</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                            <li>
+                              <span class="blog-block__tag"
+                                ><svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.36063 5.15244C7.36063 5.73809 7.12799 6.29975 6.71387 6.71387C6.29975 7.12799 5.73809 7.36063 5.15244 7.36063C4.5668 7.36063 4.00513 7.12799 3.59102 6.71387C3.1769 6.29975 2.94425 5.73809 2.94425 5.15244C2.94425 4.5668 3.1769 4.00513 3.59102 3.59102C4.00513 3.1769 4.5668 2.94425 5.15244 2.94425C5.73809 2.94425 6.29975 3.1769 6.71387 3.59102C7.12799 4.00513 7.36063 4.5668 7.36063 5.15244ZM5.88851 5.15244C5.88851 4.95723 5.81096 4.77001 5.67292 4.63197C5.53488 4.49393 5.34766 4.41638 5.15244 4.41638C4.95723 4.41638 4.77001 4.49393 4.63197 4.63197C4.49393 4.77001 4.41638 4.95723 4.41638 5.15244C4.41638 5.34766 4.49393 5.53488 4.63197 5.67292C4.77001 5.81096 4.95723 5.88851 5.15244 5.88851C5.34766 5.88851 5.53488 5.81096 5.67292 5.67292C5.81096 5.53488 5.88851 5.34766 5.88851 5.15244Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M1.47213 0H8.2233C8.6137 8.33774e-05 8.98808 0.155237 9.26409 0.431333L19.569 10.7362C19.845 11.0123 20 11.3867 20 11.777C20 12.1674 19.845 12.5417 19.569 12.8178L12.8178 19.569C12.5417 19.845 12.1674 20 11.777 20C11.3867 20 11.0123 19.845 10.7362 19.569L0.431333 9.26409C0.155237 8.98808 8.33774e-05 8.6137 0 8.2233V1.47213C0 1.08169 0.155099 0.707253 0.431176 0.431176C0.707253 0.155099 1.08169 0 1.47213 0ZM1.47213 8.2233L11.777 18.5282L18.5282 11.777L8.2233 1.47213H1.47213V8.2233Z"
+                                    fill="black"
+                                  /></svg
+                                ><a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/category/marketing/"
+                                  rel="category tag"
+                                  >Marketing</a
+                                ></span
+                              >
+                            </li>
+                            <li>
+                              <span class="blog-block__comment"
+                                ><svg
+                                  width="20.448"
+                                  height="18.813"
+                                  viewBox="0 0 20.448 18.813"
+                                >
+                                  <g transform="translate(-0.001 1.332)">
+                                    <path
+                                      data-name="Path 5661"
+                                      d="M17.638-1.332H2.812A2.814,2.814,0,0,0,0,1.479v9.073a2.814,2.814,0,0,0,2.8,2.811v4.117l5.917-4.117h8.919a2.814,2.814,0,0,0,2.811-2.811V1.479a2.814,2.814,0,0,0-2.811-2.811Zm1.613,11.884a1.615,1.615,0,0,1-1.613,1.613H8.343L4,15.187V12.165H2.812A1.615,1.615,0,0,1,1.2,10.552V1.479A1.615,1.615,0,0,1,2.812-.134H17.638a1.615,1.615,0,0,1,1.613,1.613Zm0,0"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5662"
+                                      d="M171.293,131.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -128.271)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5663"
+                                      d="M171.293,211.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -205.715)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5664"
+                                      d="M171.293,291.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -283.159)"
+                                      fill="#061526"
+                                    />
+                                  </g>
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-12/#respond"
+                                    >0 Comments</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <h2 class="blog-block__heading mb-0">
+                          <a
+                            class="blog-block__heading__link"
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-12/"
+                            >Every business owner must be able to answer
+                            correctly</a
+                          >
+                        </h2>
+                        <p class="blog-block__text">
+                          We are a boutique digital transformation consultancy
+                          and software development Fusce consectetur erat id
+                          enim element Fusce consectetur erat id enim element
+                          tincidunt. Fusce consectetur erat id enim element
+                          tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div
+                      id="post-8019"
+                      class="blog-block blog-block--style1 bg-section mb-24 wow fadeInUp post-8019 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptocurrency tag-analysis tag-digital tag-technology have-post-thumb"
+                      data-wow-delay="0.5s"
+                      data-wow-duration="1s"
+                    >
+                      <div class="item-img">
+                        <figure
+                          class="blog-block__figure mb-0 position-relative"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-11/"
+                          >
+                            <img
+                              width="770"
+                              height="420"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/blog12-770x420.jpg"
+                              class="attachment-daisy-thumb1 size-daisy-thumb1 wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </a>
+                          <div class="blog-block__date">
+                            <span>15 Feb</span>
+                            <span>2022</span>
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="blog-block__content">
+                        <div class="blog-block__meta">
+                          <ul class="blog-block__meta__list">
+                            <li>
+                              <span class="blog-block__user"
+                                ><svg
+                                  width="21"
+                                  height="21"
+                                  viewBox="0 0 21 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M10.25 4.53571C9.54364 4.53571 8.85314 4.74517 8.26582 5.13761C7.6785 5.53004 7.22075 6.08782 6.95043 6.74041C6.68012 7.39301 6.60939 8.1111 6.7472 8.80389C6.885 9.49668 7.22515 10.133 7.72462 10.6325C8.22409 11.132 8.86046 11.4721 9.55325 11.6099C10.246 11.7477 10.9641 11.677 11.6167 11.4067C12.2693 11.1364 12.8271 10.6786 13.2195 10.0913C13.612 9.504 13.8214 8.8135 13.8214 8.10714C13.8214 7.15994 13.4452 6.25153 12.7754 5.58176C12.1056 4.91199 11.1972 4.53571 10.25 4.53571ZM10.25 10.25C9.82618 10.25 9.41188 10.1243 9.05949 9.88886C8.7071 9.6534 8.43245 9.31873 8.27026 8.92718C8.10807 8.53562 8.06564 8.10476 8.14832 7.68909C8.231 7.27342 8.43509 6.8916 8.73477 6.59191C9.03446 6.29223 9.41628 6.08814 9.83195 6.00546C10.2476 5.92278 10.6785 5.96521 11.07 6.1274C11.4616 6.28959 11.7963 6.56424 12.0317 6.91663C12.2672 7.26902 12.3929 7.68332 12.3929 8.10714C12.3923 8.67529 12.1663 9.22 11.7646 9.62174C11.3629 10.0235 10.8181 10.2494 10.25 10.25Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M10.25 0.25C8.27219 0.25 6.33879 0.83649 4.6943 1.9353C3.04981 3.03412 1.76809 4.5959 1.01121 6.42316C0.254333 8.25042 0.0562996 10.2611 0.442152 12.2009C0.828004 14.1407 1.78041 15.9225 3.17894 17.3211C4.57746 18.7196 6.35929 19.672 8.2991 20.0578C10.2389 20.4437 12.2496 20.2457 14.0768 19.4888C15.9041 18.7319 17.4659 17.4502 18.5647 15.8057C19.6635 14.1612 20.25 12.2278 20.25 10.25C20.247 7.59876 19.1924 5.05698 17.3177 3.18227C15.443 1.30756 12.9012 0.253025 10.25 0.25ZM5.96429 17.6621V16.6786C5.96486 16.1104 6.1908 15.5657 6.59254 15.164C6.99428 14.7622 7.539 14.5363 8.10715 14.5357H12.3929C12.961 14.5363 13.5057 14.7622 13.9075 15.164C14.3092 15.5657 14.5351 16.1104 14.5357 16.6786V17.6621C13.2351 18.4216 11.7561 18.8218 10.25 18.8218C8.74392 18.8218 7.26488 18.4216 5.96429 17.6621ZM15.9586 16.6257C15.9443 15.6888 15.5626 14.795 14.8956 14.1368C14.2287 13.4787 13.3299 13.1089 12.3929 13.1071H8.10715C7.17013 13.1089 6.27132 13.4787 5.60435 14.1368C4.93739 14.795 4.55567 15.6888 4.54143 16.6257C3.24612 15.4691 2.33267 13.9463 1.92203 12.259C1.51139 10.5718 1.62293 8.79953 2.24189 7.17704C2.86084 5.55455 3.95802 4.15833 5.38813 3.17326C6.81823 2.18819 8.51382 1.66073 10.2504 1.66073C11.9869 1.66073 13.6825 2.18819 15.1126 3.17326C16.5427 4.15833 17.6399 5.55455 18.2588 7.17704C18.8778 8.79953 18.9893 10.5718 18.5787 12.259C18.168 13.9463 17.2539 15.4691 15.9586 16.6257Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/author/admin/"
+                                    title="Posts by admin"
+                                    rel="author"
+                                    >admin</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                            <li>
+                              <span class="blog-block__tag"
+                                ><svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.36063 5.15244C7.36063 5.73809 7.12799 6.29975 6.71387 6.71387C6.29975 7.12799 5.73809 7.36063 5.15244 7.36063C4.5668 7.36063 4.00513 7.12799 3.59102 6.71387C3.1769 6.29975 2.94425 5.73809 2.94425 5.15244C2.94425 4.5668 3.1769 4.00513 3.59102 3.59102C4.00513 3.1769 4.5668 2.94425 5.15244 2.94425C5.73809 2.94425 6.29975 3.1769 6.71387 3.59102C7.12799 4.00513 7.36063 4.5668 7.36063 5.15244ZM5.88851 5.15244C5.88851 4.95723 5.81096 4.77001 5.67292 4.63197C5.53488 4.49393 5.34766 4.41638 5.15244 4.41638C4.95723 4.41638 4.77001 4.49393 4.63197 4.63197C4.49393 4.77001 4.41638 4.95723 4.41638 5.15244C4.41638 5.34766 4.49393 5.53488 4.63197 5.67292C4.77001 5.81096 4.95723 5.88851 5.15244 5.88851C5.34766 5.88851 5.53488 5.81096 5.67292 5.67292C5.81096 5.53488 5.88851 5.34766 5.88851 5.15244Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M1.47213 0H8.2233C8.6137 8.33774e-05 8.98808 0.155237 9.26409 0.431333L19.569 10.7362C19.845 11.0123 20 11.3867 20 11.777C20 12.1674 19.845 12.5417 19.569 12.8178L12.8178 19.569C12.5417 19.845 12.1674 20 11.777 20C11.3867 20 11.0123 19.845 10.7362 19.569L0.431333 9.26409C0.155237 8.98808 8.33774e-05 8.6137 0 8.2233V1.47213C0 1.08169 0.155099 0.707253 0.431176 0.431176C0.707253 0.155099 1.08169 0 1.47213 0ZM1.47213 8.2233L11.777 18.5282L18.5282 11.777L8.2233 1.47213H1.47213V8.2233Z"
+                                    fill="black"
+                                  /></svg
+                                ><a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/category/cryptocurrency/"
+                                  rel="category tag"
+                                  >Cryptocurrency</a
+                                ></span
+                              >
+                            </li>
+                            <li>
+                              <span class="blog-block__comment"
+                                ><svg
+                                  width="20.448"
+                                  height="18.813"
+                                  viewBox="0 0 20.448 18.813"
+                                >
+                                  <g transform="translate(-0.001 1.332)">
+                                    <path
+                                      data-name="Path 5661"
+                                      d="M17.638-1.332H2.812A2.814,2.814,0,0,0,0,1.479v9.073a2.814,2.814,0,0,0,2.8,2.811v4.117l5.917-4.117h8.919a2.814,2.814,0,0,0,2.811-2.811V1.479a2.814,2.814,0,0,0-2.811-2.811Zm1.613,11.884a1.615,1.615,0,0,1-1.613,1.613H8.343L4,15.187V12.165H2.812A1.615,1.615,0,0,1,1.2,10.552V1.479A1.615,1.615,0,0,1,2.812-.134H17.638a1.615,1.615,0,0,1,1.613,1.613Zm0,0"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5662"
+                                      d="M171.293,131.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -128.271)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5663"
+                                      d="M171.293,211.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -205.715)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5664"
+                                      d="M171.293,291.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -283.159)"
+                                      fill="#061526"
+                                    />
+                                  </g>
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-11/#respond"
+                                    >0 Comments</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <h2 class="blog-block__heading mb-0">
+                          <a
+                            class="blog-block__heading__link"
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-11/"
+                            >Every business owner must be able to answer
+                            correctly</a
+                          >
+                        </h2>
+                        <p class="blog-block__text">
+                          We are a boutique digital transformation consultancy
+                          and software development Fusce consectetur erat id
+                          enim element Fusce consectetur erat id enim element
+                          tincidunt. Fusce consectetur erat id enim element
+                          tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div
+                      id="post-8015"
+                      class="blog-block blog-block--style1 bg-section mb-24 wow fadeInUp post-8015 post type-post status-publish format-standard has-post-thumbnail hentry category-business tag-analysis tag-digital tag-technology have-post-thumb"
+                      data-wow-delay="0.5s"
+                      data-wow-duration="1s"
+                    >
+                      <div class="item-img">
+                        <figure
+                          class="blog-block__figure mb-0 position-relative"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-10/"
+                          >
+                            <img
+                              width="770"
+                              height="420"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2021/12/blog01-1-770x420.jpg"
+                              class="attachment-daisy-thumb1 size-daisy-thumb1 wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </a>
+                          <div class="blog-block__date">
+                            <span>15 Feb</span>
+                            <span>2022</span>
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="blog-block__content">
+                        <div class="blog-block__meta">
+                          <ul class="blog-block__meta__list">
+                            <li>
+                              <span class="blog-block__user"
+                                ><svg
+                                  width="21"
+                                  height="21"
+                                  viewBox="0 0 21 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M10.25 4.53571C9.54364 4.53571 8.85314 4.74517 8.26582 5.13761C7.6785 5.53004 7.22075 6.08782 6.95043 6.74041C6.68012 7.39301 6.60939 8.1111 6.7472 8.80389C6.885 9.49668 7.22515 10.133 7.72462 10.6325C8.22409 11.132 8.86046 11.4721 9.55325 11.6099C10.246 11.7477 10.9641 11.677 11.6167 11.4067C12.2693 11.1364 12.8271 10.6786 13.2195 10.0913C13.612 9.504 13.8214 8.8135 13.8214 8.10714C13.8214 7.15994 13.4452 6.25153 12.7754 5.58176C12.1056 4.91199 11.1972 4.53571 10.25 4.53571ZM10.25 10.25C9.82618 10.25 9.41188 10.1243 9.05949 9.88886C8.7071 9.6534 8.43245 9.31873 8.27026 8.92718C8.10807 8.53562 8.06564 8.10476 8.14832 7.68909C8.231 7.27342 8.43509 6.8916 8.73477 6.59191C9.03446 6.29223 9.41628 6.08814 9.83195 6.00546C10.2476 5.92278 10.6785 5.96521 11.07 6.1274C11.4616 6.28959 11.7963 6.56424 12.0317 6.91663C12.2672 7.26902 12.3929 7.68332 12.3929 8.10714C12.3923 8.67529 12.1663 9.22 11.7646 9.62174C11.3629 10.0235 10.8181 10.2494 10.25 10.25Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M10.25 0.25C8.27219 0.25 6.33879 0.83649 4.6943 1.9353C3.04981 3.03412 1.76809 4.5959 1.01121 6.42316C0.254333 8.25042 0.0562996 10.2611 0.442152 12.2009C0.828004 14.1407 1.78041 15.9225 3.17894 17.3211C4.57746 18.7196 6.35929 19.672 8.2991 20.0578C10.2389 20.4437 12.2496 20.2457 14.0768 19.4888C15.9041 18.7319 17.4659 17.4502 18.5647 15.8057C19.6635 14.1612 20.25 12.2278 20.25 10.25C20.247 7.59876 19.1924 5.05698 17.3177 3.18227C15.443 1.30756 12.9012 0.253025 10.25 0.25ZM5.96429 17.6621V16.6786C5.96486 16.1104 6.1908 15.5657 6.59254 15.164C6.99428 14.7622 7.539 14.5363 8.10715 14.5357H12.3929C12.961 14.5363 13.5057 14.7622 13.9075 15.164C14.3092 15.5657 14.5351 16.1104 14.5357 16.6786V17.6621C13.2351 18.4216 11.7561 18.8218 10.25 18.8218C8.74392 18.8218 7.26488 18.4216 5.96429 17.6621ZM15.9586 16.6257C15.9443 15.6888 15.5626 14.795 14.8956 14.1368C14.2287 13.4787 13.3299 13.1089 12.3929 13.1071H8.10715C7.17013 13.1089 6.27132 13.4787 5.60435 14.1368C4.93739 14.795 4.55567 15.6888 4.54143 16.6257C3.24612 15.4691 2.33267 13.9463 1.92203 12.259C1.51139 10.5718 1.62293 8.79953 2.24189 7.17704C2.86084 5.55455 3.95802 4.15833 5.38813 3.17326C6.81823 2.18819 8.51382 1.66073 10.2504 1.66073C11.9869 1.66073 13.6825 2.18819 15.1126 3.17326C16.5427 4.15833 17.6399 5.55455 18.2588 7.17704C18.8778 8.79953 18.9893 10.5718 18.5787 12.259C18.168 13.9463 17.2539 15.4691 15.9586 16.6257Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/author/admin/"
+                                    title="Posts by admin"
+                                    rel="author"
+                                    >admin</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                            <li>
+                              <span class="blog-block__tag"
+                                ><svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.36063 5.15244C7.36063 5.73809 7.12799 6.29975 6.71387 6.71387C6.29975 7.12799 5.73809 7.36063 5.15244 7.36063C4.5668 7.36063 4.00513 7.12799 3.59102 6.71387C3.1769 6.29975 2.94425 5.73809 2.94425 5.15244C2.94425 4.5668 3.1769 4.00513 3.59102 3.59102C4.00513 3.1769 4.5668 2.94425 5.15244 2.94425C5.73809 2.94425 6.29975 3.1769 6.71387 3.59102C7.12799 4.00513 7.36063 4.5668 7.36063 5.15244ZM5.88851 5.15244C5.88851 4.95723 5.81096 4.77001 5.67292 4.63197C5.53488 4.49393 5.34766 4.41638 5.15244 4.41638C4.95723 4.41638 4.77001 4.49393 4.63197 4.63197C4.49393 4.77001 4.41638 4.95723 4.41638 5.15244C4.41638 5.34766 4.49393 5.53488 4.63197 5.67292C4.77001 5.81096 4.95723 5.88851 5.15244 5.88851C5.34766 5.88851 5.53488 5.81096 5.67292 5.67292C5.81096 5.53488 5.88851 5.34766 5.88851 5.15244Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M1.47213 0H8.2233C8.6137 8.33774e-05 8.98808 0.155237 9.26409 0.431333L19.569 10.7362C19.845 11.0123 20 11.3867 20 11.777C20 12.1674 19.845 12.5417 19.569 12.8178L12.8178 19.569C12.5417 19.845 12.1674 20 11.777 20C11.3867 20 11.0123 19.845 10.7362 19.569L0.431333 9.26409C0.155237 8.98808 8.33774e-05 8.6137 0 8.2233V1.47213C0 1.08169 0.155099 0.707253 0.431176 0.431176C0.707253 0.155099 1.08169 0 1.47213 0ZM1.47213 8.2233L11.777 18.5282L18.5282 11.777L8.2233 1.47213H1.47213V8.2233Z"
+                                    fill="black"
+                                  /></svg
+                                ><a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/category/business/"
+                                  rel="category tag"
+                                  >Business</a
+                                ></span
+                              >
+                            </li>
+                            <li>
+                              <span class="blog-block__comment"
+                                ><svg
+                                  width="20.448"
+                                  height="18.813"
+                                  viewBox="0 0 20.448 18.813"
+                                >
+                                  <g transform="translate(-0.001 1.332)">
+                                    <path
+                                      data-name="Path 5661"
+                                      d="M17.638-1.332H2.812A2.814,2.814,0,0,0,0,1.479v9.073a2.814,2.814,0,0,0,2.8,2.811v4.117l5.917-4.117h8.919a2.814,2.814,0,0,0,2.811-2.811V1.479a2.814,2.814,0,0,0-2.811-2.811Zm1.613,11.884a1.615,1.615,0,0,1-1.613,1.613H8.343L4,15.187V12.165H2.812A1.615,1.615,0,0,1,1.2,10.552V1.479A1.615,1.615,0,0,1,2.812-.134H17.638a1.615,1.615,0,0,1,1.613,1.613Zm0,0"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5662"
+                                      d="M171.293,131.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -128.271)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5663"
+                                      d="M171.293,211.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -205.715)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5664"
+                                      d="M171.293,291.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -283.159)"
+                                      fill="#061526"
+                                    />
+                                  </g>
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-10/#respond"
+                                    >0 Comments</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <h2 class="blog-block__heading mb-0">
+                          <a
+                            class="blog-block__heading__link"
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-10/"
+                            >Every business owner must be able to answer
+                            correctly</a
+                          >
+                        </h2>
+                        <p class="blog-block__text">
+                          We are a boutique digital transformation consultancy
+                          and software development Fusce consectetur erat id
+                          enim element Fusce consectetur erat id enim element
+                          tincidunt. Fusce consectetur erat id enim element
+                          tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div
+                      id="post-8012"
+                      class="blog-block blog-block--style1 bg-section mb-24 wow fadeInUp post-8012 post type-post status-publish format-standard has-post-thumbnail hentry category-analysis tag-analysis tag-digital tag-technology have-post-thumb"
+                      data-wow-delay="0.5s"
+                      data-wow-duration="1s"
+                    >
+                      <div class="item-img">
+                        <figure
+                          class="blog-block__figure mb-0 position-relative"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-9/"
+                          >
+                            <img
+                              loading="lazy"
+                              width="770"
+                              height="420"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/blog11-770x420.jpg"
+                              class="attachment-daisy-thumb1 size-daisy-thumb1 wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </a>
+                          <div class="blog-block__date">
+                            <span>15 Feb</span>
+                            <span>2022</span>
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="blog-block__content">
+                        <div class="blog-block__meta">
+                          <ul class="blog-block__meta__list">
+                            <li>
+                              <span class="blog-block__user"
+                                ><svg
+                                  width="21"
+                                  height="21"
+                                  viewBox="0 0 21 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M10.25 4.53571C9.54364 4.53571 8.85314 4.74517 8.26582 5.13761C7.6785 5.53004 7.22075 6.08782 6.95043 6.74041C6.68012 7.39301 6.60939 8.1111 6.7472 8.80389C6.885 9.49668 7.22515 10.133 7.72462 10.6325C8.22409 11.132 8.86046 11.4721 9.55325 11.6099C10.246 11.7477 10.9641 11.677 11.6167 11.4067C12.2693 11.1364 12.8271 10.6786 13.2195 10.0913C13.612 9.504 13.8214 8.8135 13.8214 8.10714C13.8214 7.15994 13.4452 6.25153 12.7754 5.58176C12.1056 4.91199 11.1972 4.53571 10.25 4.53571ZM10.25 10.25C9.82618 10.25 9.41188 10.1243 9.05949 9.88886C8.7071 9.6534 8.43245 9.31873 8.27026 8.92718C8.10807 8.53562 8.06564 8.10476 8.14832 7.68909C8.231 7.27342 8.43509 6.8916 8.73477 6.59191C9.03446 6.29223 9.41628 6.08814 9.83195 6.00546C10.2476 5.92278 10.6785 5.96521 11.07 6.1274C11.4616 6.28959 11.7963 6.56424 12.0317 6.91663C12.2672 7.26902 12.3929 7.68332 12.3929 8.10714C12.3923 8.67529 12.1663 9.22 11.7646 9.62174C11.3629 10.0235 10.8181 10.2494 10.25 10.25Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M10.25 0.25C8.27219 0.25 6.33879 0.83649 4.6943 1.9353C3.04981 3.03412 1.76809 4.5959 1.01121 6.42316C0.254333 8.25042 0.0562996 10.2611 0.442152 12.2009C0.828004 14.1407 1.78041 15.9225 3.17894 17.3211C4.57746 18.7196 6.35929 19.672 8.2991 20.0578C10.2389 20.4437 12.2496 20.2457 14.0768 19.4888C15.9041 18.7319 17.4659 17.4502 18.5647 15.8057C19.6635 14.1612 20.25 12.2278 20.25 10.25C20.247 7.59876 19.1924 5.05698 17.3177 3.18227C15.443 1.30756 12.9012 0.253025 10.25 0.25ZM5.96429 17.6621V16.6786C5.96486 16.1104 6.1908 15.5657 6.59254 15.164C6.99428 14.7622 7.539 14.5363 8.10715 14.5357H12.3929C12.961 14.5363 13.5057 14.7622 13.9075 15.164C14.3092 15.5657 14.5351 16.1104 14.5357 16.6786V17.6621C13.2351 18.4216 11.7561 18.8218 10.25 18.8218C8.74392 18.8218 7.26488 18.4216 5.96429 17.6621ZM15.9586 16.6257C15.9443 15.6888 15.5626 14.795 14.8956 14.1368C14.2287 13.4787 13.3299 13.1089 12.3929 13.1071H8.10715C7.17013 13.1089 6.27132 13.4787 5.60435 14.1368C4.93739 14.795 4.55567 15.6888 4.54143 16.6257C3.24612 15.4691 2.33267 13.9463 1.92203 12.259C1.51139 10.5718 1.62293 8.79953 2.24189 7.17704C2.86084 5.55455 3.95802 4.15833 5.38813 3.17326C6.81823 2.18819 8.51382 1.66073 10.2504 1.66073C11.9869 1.66073 13.6825 2.18819 15.1126 3.17326C16.5427 4.15833 17.6399 5.55455 18.2588 7.17704C18.8778 8.79953 18.9893 10.5718 18.5787 12.259C18.168 13.9463 17.2539 15.4691 15.9586 16.6257Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/author/admin/"
+                                    title="Posts by admin"
+                                    rel="author"
+                                    >admin</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                            <li>
+                              <span class="blog-block__tag"
+                                ><svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.36063 5.15244C7.36063 5.73809 7.12799 6.29975 6.71387 6.71387C6.29975 7.12799 5.73809 7.36063 5.15244 7.36063C4.5668 7.36063 4.00513 7.12799 3.59102 6.71387C3.1769 6.29975 2.94425 5.73809 2.94425 5.15244C2.94425 4.5668 3.1769 4.00513 3.59102 3.59102C4.00513 3.1769 4.5668 2.94425 5.15244 2.94425C5.73809 2.94425 6.29975 3.1769 6.71387 3.59102C7.12799 4.00513 7.36063 4.5668 7.36063 5.15244ZM5.88851 5.15244C5.88851 4.95723 5.81096 4.77001 5.67292 4.63197C5.53488 4.49393 5.34766 4.41638 5.15244 4.41638C4.95723 4.41638 4.77001 4.49393 4.63197 4.63197C4.49393 4.77001 4.41638 4.95723 4.41638 5.15244C4.41638 5.34766 4.49393 5.53488 4.63197 5.67292C4.77001 5.81096 4.95723 5.88851 5.15244 5.88851C5.34766 5.88851 5.53488 5.81096 5.67292 5.67292C5.81096 5.53488 5.88851 5.34766 5.88851 5.15244Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M1.47213 0H8.2233C8.6137 8.33774e-05 8.98808 0.155237 9.26409 0.431333L19.569 10.7362C19.845 11.0123 20 11.3867 20 11.777C20 12.1674 19.845 12.5417 19.569 12.8178L12.8178 19.569C12.5417 19.845 12.1674 20 11.777 20C11.3867 20 11.0123 19.845 10.7362 19.569L0.431333 9.26409C0.155237 8.98808 8.33774e-05 8.6137 0 8.2233V1.47213C0 1.08169 0.155099 0.707253 0.431176 0.431176C0.707253 0.155099 1.08169 0 1.47213 0ZM1.47213 8.2233L11.777 18.5282L18.5282 11.777L8.2233 1.47213H1.47213V8.2233Z"
+                                    fill="black"
+                                  /></svg
+                                ><a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/category/analysis/"
+                                  rel="category tag"
+                                  >Analysis</a
+                                ></span
+                              >
+                            </li>
+                            <li>
+                              <span class="blog-block__comment"
+                                ><svg
+                                  width="20.448"
+                                  height="18.813"
+                                  viewBox="0 0 20.448 18.813"
+                                >
+                                  <g transform="translate(-0.001 1.332)">
+                                    <path
+                                      data-name="Path 5661"
+                                      d="M17.638-1.332H2.812A2.814,2.814,0,0,0,0,1.479v9.073a2.814,2.814,0,0,0,2.8,2.811v4.117l5.917-4.117h8.919a2.814,2.814,0,0,0,2.811-2.811V1.479a2.814,2.814,0,0,0-2.811-2.811Zm1.613,11.884a1.615,1.615,0,0,1-1.613,1.613H8.343L4,15.187V12.165H2.812A1.615,1.615,0,0,1,1.2,10.552V1.479A1.615,1.615,0,0,1,2.812-.134H17.638a1.615,1.615,0,0,1,1.613,1.613Zm0,0"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5662"
+                                      d="M171.293,131.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -128.271)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5663"
+                                      d="M171.293,211.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -205.715)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5664"
+                                      d="M171.293,291.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -283.159)"
+                                      fill="#061526"
+                                    />
+                                  </g>
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-9/#respond"
+                                    >0 Comments</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <h2 class="blog-block__heading mb-0">
+                          <a
+                            class="blog-block__heading__link"
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-9/"
+                            >Every business owner must be able to answer
+                            correctly</a
+                          >
+                        </h2>
+                        <p class="blog-block__text">
+                          We are a boutique digital transformation consultancy
+                          and software development Fusce consectetur erat id
+                          enim element Fusce consectetur erat id enim element
+                          tincidunt. Fusce consectetur erat id enim element
+                          tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div
+                      id="post-8009"
+                      class="blog-block blog-block--style1 bg-section mb-24 wow fadeInUp post-8009 post type-post status-publish format-standard has-post-thumbnail hentry category-app tag-analysis tag-digital tag-technology have-post-thumb"
+                      data-wow-delay="0.5s"
+                      data-wow-duration="1s"
+                    >
+                      <div class="item-img">
+                        <figure
+                          class="blog-block__figure mb-0 position-relative"
+                        >
+                          <a
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-8/"
+                          >
+                            <img
+                              loading="lazy"
+                              width="770"
+                              height="420"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/blog4-770x420.jpg"
+                              class="attachment-daisy-thumb1 size-daisy-thumb1 wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </a>
+                          <div class="blog-block__date">
+                            <span>15 Feb</span>
+                            <span>2022</span>
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="blog-block__content">
+                        <div class="blog-block__meta">
+                          <ul class="blog-block__meta__list">
+                            <li>
+                              <span class="blog-block__user"
+                                ><svg
+                                  width="21"
+                                  height="21"
+                                  viewBox="0 0 21 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M10.25 4.53571C9.54364 4.53571 8.85314 4.74517 8.26582 5.13761C7.6785 5.53004 7.22075 6.08782 6.95043 6.74041C6.68012 7.39301 6.60939 8.1111 6.7472 8.80389C6.885 9.49668 7.22515 10.133 7.72462 10.6325C8.22409 11.132 8.86046 11.4721 9.55325 11.6099C10.246 11.7477 10.9641 11.677 11.6167 11.4067C12.2693 11.1364 12.8271 10.6786 13.2195 10.0913C13.612 9.504 13.8214 8.8135 13.8214 8.10714C13.8214 7.15994 13.4452 6.25153 12.7754 5.58176C12.1056 4.91199 11.1972 4.53571 10.25 4.53571ZM10.25 10.25C9.82618 10.25 9.41188 10.1243 9.05949 9.88886C8.7071 9.6534 8.43245 9.31873 8.27026 8.92718C8.10807 8.53562 8.06564 8.10476 8.14832 7.68909C8.231 7.27342 8.43509 6.8916 8.73477 6.59191C9.03446 6.29223 9.41628 6.08814 9.83195 6.00546C10.2476 5.92278 10.6785 5.96521 11.07 6.1274C11.4616 6.28959 11.7963 6.56424 12.0317 6.91663C12.2672 7.26902 12.3929 7.68332 12.3929 8.10714C12.3923 8.67529 12.1663 9.22 11.7646 9.62174C11.3629 10.0235 10.8181 10.2494 10.25 10.25Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M10.25 0.25C8.27219 0.25 6.33879 0.83649 4.6943 1.9353C3.04981 3.03412 1.76809 4.5959 1.01121 6.42316C0.254333 8.25042 0.0562996 10.2611 0.442152 12.2009C0.828004 14.1407 1.78041 15.9225 3.17894 17.3211C4.57746 18.7196 6.35929 19.672 8.2991 20.0578C10.2389 20.4437 12.2496 20.2457 14.0768 19.4888C15.9041 18.7319 17.4659 17.4502 18.5647 15.8057C19.6635 14.1612 20.25 12.2278 20.25 10.25C20.247 7.59876 19.1924 5.05698 17.3177 3.18227C15.443 1.30756 12.9012 0.253025 10.25 0.25ZM5.96429 17.6621V16.6786C5.96486 16.1104 6.1908 15.5657 6.59254 15.164C6.99428 14.7622 7.539 14.5363 8.10715 14.5357H12.3929C12.961 14.5363 13.5057 14.7622 13.9075 15.164C14.3092 15.5657 14.5351 16.1104 14.5357 16.6786V17.6621C13.2351 18.4216 11.7561 18.8218 10.25 18.8218C8.74392 18.8218 7.26488 18.4216 5.96429 17.6621ZM15.9586 16.6257C15.9443 15.6888 15.5626 14.795 14.8956 14.1368C14.2287 13.4787 13.3299 13.1089 12.3929 13.1071H8.10715C7.17013 13.1089 6.27132 13.4787 5.60435 14.1368C4.93739 14.795 4.55567 15.6888 4.54143 16.6257C3.24612 15.4691 2.33267 13.9463 1.92203 12.259C1.51139 10.5718 1.62293 8.79953 2.24189 7.17704C2.86084 5.55455 3.95802 4.15833 5.38813 3.17326C6.81823 2.18819 8.51382 1.66073 10.2504 1.66073C11.9869 1.66073 13.6825 2.18819 15.1126 3.17326C16.5427 4.15833 17.6399 5.55455 18.2588 7.17704C18.8778 8.79953 18.9893 10.5718 18.5787 12.259C18.168 13.9463 17.2539 15.4691 15.9586 16.6257Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/author/admin/"
+                                    title="Posts by admin"
+                                    rel="author"
+                                    >admin</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                            <li>
+                              <span class="blog-block__tag"
+                                ><svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.36063 5.15244C7.36063 5.73809 7.12799 6.29975 6.71387 6.71387C6.29975 7.12799 5.73809 7.36063 5.15244 7.36063C4.5668 7.36063 4.00513 7.12799 3.59102 6.71387C3.1769 6.29975 2.94425 5.73809 2.94425 5.15244C2.94425 4.5668 3.1769 4.00513 3.59102 3.59102C4.00513 3.1769 4.5668 2.94425 5.15244 2.94425C5.73809 2.94425 6.29975 3.1769 6.71387 3.59102C7.12799 4.00513 7.36063 4.5668 7.36063 5.15244ZM5.88851 5.15244C5.88851 4.95723 5.81096 4.77001 5.67292 4.63197C5.53488 4.49393 5.34766 4.41638 5.15244 4.41638C4.95723 4.41638 4.77001 4.49393 4.63197 4.63197C4.49393 4.77001 4.41638 4.95723 4.41638 5.15244C4.41638 5.34766 4.49393 5.53488 4.63197 5.67292C4.77001 5.81096 4.95723 5.88851 5.15244 5.88851C5.34766 5.88851 5.53488 5.81096 5.67292 5.67292C5.81096 5.53488 5.88851 5.34766 5.88851 5.15244Z"
+                                    fill="black"
+                                  />
+                                  <path
+                                    d="M1.47213 0H8.2233C8.6137 8.33774e-05 8.98808 0.155237 9.26409 0.431333L19.569 10.7362C19.845 11.0123 20 11.3867 20 11.777C20 12.1674 19.845 12.5417 19.569 12.8178L12.8178 19.569C12.5417 19.845 12.1674 20 11.777 20C11.3867 20 11.0123 19.845 10.7362 19.569L0.431333 9.26409C0.155237 8.98808 8.33774e-05 8.6137 0 8.2233V1.47213C0 1.08169 0.155099 0.707253 0.431176 0.431176C0.707253 0.155099 1.08169 0 1.47213 0ZM1.47213 8.2233L11.777 18.5282L18.5282 11.777L8.2233 1.47213H1.47213V8.2233Z"
+                                    fill="black"
+                                  /></svg
+                                ><a
+                                  href="https://radiustheme.com/demo/wordpress/themes/daisy/category/app/"
+                                  rel="category tag"
+                                  >App</a
+                                ></span
+                              >
+                            </li>
+                            <li>
+                              <span class="blog-block__comment"
+                                ><svg
+                                  width="20.448"
+                                  height="18.813"
+                                  viewBox="0 0 20.448 18.813"
+                                >
+                                  <g transform="translate(-0.001 1.332)">
+                                    <path
+                                      data-name="Path 5661"
+                                      d="M17.638-1.332H2.812A2.814,2.814,0,0,0,0,1.479v9.073a2.814,2.814,0,0,0,2.8,2.811v4.117l5.917-4.117h8.919a2.814,2.814,0,0,0,2.811-2.811V1.479a2.814,2.814,0,0,0-2.811-2.811Zm1.613,11.884a1.615,1.615,0,0,1-1.613,1.613H8.343L4,15.187V12.165H2.812A1.615,1.615,0,0,1,1.2,10.552V1.479A1.615,1.615,0,0,1,2.812-.134H17.638a1.615,1.615,0,0,1,1.613,1.613Zm0,0"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5662"
+                                      d="M171.293,131.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -128.271)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5663"
+                                      d="M171.293,211.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -205.715)"
+                                      fill="#061526"
+                                    />
+                                    <path
+                                      data-name="Path 5664"
+                                      d="M171.293,291.172h9.5v1.2h-9.5Zm0,0"
+                                      transform="translate(-165.819 -283.159)"
+                                      fill="#061526"
+                                    />
+                                  </g>
+                                </svg>
+                                <span
+                                  ><a
+                                    href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-8/#respond"
+                                    >0 Comments</a
+                                  ></span
+                                >
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <h2 class="blog-block__heading mb-0">
+                          <a
+                            class="blog-block__heading__link"
+                            href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-8/"
+                            >Every business owner must be able to answer
+                            correctly</a
+                          >
+                        </h2>
+                        <p class="blog-block__text">
+                          We are a boutique digital transformation consultancy
+                          and software development Fusce consectetur erat id
+                          enim element Fusce consectetur erat id enim element
+                          tincidunt. Fusce consectetur erat id enim element
+                          tincidunt.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination">
+                  <ul class="inline-list">
+                    <li class="pagi-previous disabled">
+                      <span><i class="flaticon-left-arrow"></i>Prev</span>
+                    </li>
+                    <li class="active"><span>1</span></li>
+                    <li>
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/blog/page/2/"
+                        >2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/blog/page/3/"
+                        >3</a
+                      >
+                    </li>
+                    <li class="pagi-next">
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/blog/page/2/"
+                        >Next<i class="flaticon-right-arrow"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-12 fixed-bar-coloum">
+                <div class="sidebar-widget">
+                  <div id="search-2" class="widget widget_search">
+                    <form
+                      role="search"
+                      method="get"
+                      class="blog-search"
+                      action="https://radiustheme.com/demo/wordpress/themes/daisy/"
+                    >
+                      <div class="blog-search__group">
+                        <input
+                          type="text"
+                          class="blog-search__input"
+                          placeholder="Search Keyword"
+                          value=""
+                          name="s"
+                        />
+                        <button type="submit" class="blog-search__button">
+                          <svg
+                            class="blog-search__icon"
+                            id="loupe"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                          >
+                            <g id="Group_1408" data-name="Group 1408">
+                              <g id="Group_1407" data-name="Group 1407">
+                                <path
+                                  id="Path_5667"
+                                  data-name="Path 5667"
+                                  d="M9.688,0a9.688,9.688,0,1,0,9.688,9.688A9.7,9.7,0,0,0,9.688,0Zm0,17.588a7.9,7.9,0,1,1,7.9-7.9A7.909,7.909,0,0,1,9.688,17.588Z"
+                                  fill="#fff"
+                                />
+                              </g>
+                            </g>
+                            <g
+                              id="Group_1410"
+                              data-name="Group 1410"
+                              transform="translate(15.084 15.084)"
+                            >
+                              <g id="Group_1409" data-name="Group 1409">
+                                <path
+                                  id="Path_5668"
+                                  data-name="Path 5668"
+                                  d="M357.7,356.435l-5.127-5.127a.894.894,0,0,0-1.265,1.265l5.127,5.127a.894.894,0,0,0,1.265-1.265Z"
+                                  transform="translate(-351.046 -351.046)"
+                                  fill="#fff"
+                                />
+                              </g>
+                            </g>
+                          </svg>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    id="daisy_about_author-3"
+                    class="widget widget_daisy_about_author"
+                  >
+                    <div class="blog-about rounded text-center">
+                      <figure>
+                        <img
+                          width="92"
+                          height="92"
+                          src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/img/author-img.jpg"
+                          alt="Daisy"
+                        />
+                      </figure>
+                      <h3 class="blog-about__title mb-10">Jennifer Jaqulin</h3>
+                      <p class="blog-about__text mb-10">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration.
+                      </p>
+
+                      <ul
+                        class="social social--style-5 justify-content-center pt-10"
+                      >
+                        <li class="social__item">
+                          <a class="social__link" href="#" target="_blank"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="#" target="_blank"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="#" target="_blank"
+                            ><i class="fab fa-linkedin-in"></i
+                          ></a>
+                        </li>
+                        <li class="social__item">
+                          <a class="social__link" href="#" target="_blank"
+                            ><i class="fa fa-rss"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="daisy_post-2" class="widget widget_daisy_post">
+                    <div class="blog-post">
+                      <h3 class="blog-post__title">Recent Posts</h3>
+                      <div class="blog-post__list">
+                        <a
+                          class="blog-post__link"
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-12/"
+                        >
+                          <div class="blog-post__image">
+                            <img
+                              loading="lazy"
+                              width="150"
+                              height="150"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/blog2-150x150.jpg"
+                              class="attachment-thumbnail size-thumbnail wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </div>
+                          <div class="blog-post__content">
+                            <h3 class="blog-post__heading">
+                              Every business owner must be able to answer
+                              correctly
+                            </h3>
+                            <span class="blog-post__date"
+                              ><svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M17.5 2H14.5V0.5C14.5 0.367392 14.4473 0.240215 14.3536 0.146447C14.2598 0.0526785 14.1326 0 14 0C13.8674 0 13.7402 0.0526785 13.6464 0.146447C13.5527 0.240215 13.5 0.367392 13.5 0.5V2H6.5V0.5C6.5 0.367392 6.44732 0.240215 6.35355 0.146447C6.25979 0.0526785 6.13261 0 6 0C5.86739 0 5.74021 0.0526785 5.64645 0.146447C5.55268 0.240215 5.5 0.367392 5.5 0.5V2H2.5C1.8372 2.00079 1.20178 2.26444 0.73311 2.73311C0.264441 3.20178 0.000793929 3.8372 0 4.5V17.5C0.000793929 18.1628 0.264441 18.7982 0.73311 19.2669C1.20178 19.7356 1.8372 19.9992 2.5 20H17.5C18.1629 19.9995 18.7985 19.7359 19.2672 19.2672C19.7359 18.7985 19.9995 18.1629 20 17.5V4.5C19.9995 3.83712 19.7359 3.20154 19.2672 2.73282C18.7985 2.26409 18.1629 2.00053 17.5 2ZM19 17.5C19 17.8978 18.842 18.2794 18.5607 18.5607C18.2794 18.842 17.8978 19 17.5 19H2.5C2.10218 19 1.72064 18.842 1.43934 18.5607C1.15804 18.2794 1 17.8978 1 17.5V9H19V17.5ZM19 8H1V4.5C1 3.672 1.67 3 2.5 3H5.5V4.5C5.5 4.63261 5.55268 4.75979 5.64645 4.85355C5.74021 4.94732 5.86739 5 6 5C6.13261 5 6.25979 4.94732 6.35355 4.85355C6.44732 4.75979 6.5 4.63261 6.5 4.5V3H13.5V4.5C13.5 4.63261 13.5527 4.75979 13.6464 4.85355C13.7402 4.94732 13.8674 5 14 5C14.1326 5 14.2598 4.94732 14.3536 4.85355C14.4473 4.75979 14.5 4.63261 14.5 4.5V3H17.5C17.8978 3 18.2794 3.15804 18.5607 3.43934C18.842 3.72064 19 4.10218 19 4.5V8Z"
+                                  fill="black"
+                                /></svg
+                              >February 15, 2022</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="blog-post__list">
+                        <a
+                          class="blog-post__link"
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-11/"
+                        >
+                          <div class="blog-post__image">
+                            <img
+                              loading="lazy"
+                              width="150"
+                              height="150"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2022/02/blog12-150x150.jpg"
+                              class="attachment-thumbnail size-thumbnail wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </div>
+                          <div class="blog-post__content">
+                            <h3 class="blog-post__heading">
+                              Every business owner must be able to answer
+                              correctly
+                            </h3>
+                            <span class="blog-post__date"
+                              ><svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M17.5 2H14.5V0.5C14.5 0.367392 14.4473 0.240215 14.3536 0.146447C14.2598 0.0526785 14.1326 0 14 0C13.8674 0 13.7402 0.0526785 13.6464 0.146447C13.5527 0.240215 13.5 0.367392 13.5 0.5V2H6.5V0.5C6.5 0.367392 6.44732 0.240215 6.35355 0.146447C6.25979 0.0526785 6.13261 0 6 0C5.86739 0 5.74021 0.0526785 5.64645 0.146447C5.55268 0.240215 5.5 0.367392 5.5 0.5V2H2.5C1.8372 2.00079 1.20178 2.26444 0.73311 2.73311C0.264441 3.20178 0.000793929 3.8372 0 4.5V17.5C0.000793929 18.1628 0.264441 18.7982 0.73311 19.2669C1.20178 19.7356 1.8372 19.9992 2.5 20H17.5C18.1629 19.9995 18.7985 19.7359 19.2672 19.2672C19.7359 18.7985 19.9995 18.1629 20 17.5V4.5C19.9995 3.83712 19.7359 3.20154 19.2672 2.73282C18.7985 2.26409 18.1629 2.00053 17.5 2ZM19 17.5C19 17.8978 18.842 18.2794 18.5607 18.5607C18.2794 18.842 17.8978 19 17.5 19H2.5C2.10218 19 1.72064 18.842 1.43934 18.5607C1.15804 18.2794 1 17.8978 1 17.5V9H19V17.5ZM19 8H1V4.5C1 3.672 1.67 3 2.5 3H5.5V4.5C5.5 4.63261 5.55268 4.75979 5.64645 4.85355C5.74021 4.94732 5.86739 5 6 5C6.13261 5 6.25979 4.94732 6.35355 4.85355C6.44732 4.75979 6.5 4.63261 6.5 4.5V3H13.5V4.5C13.5 4.63261 13.5527 4.75979 13.6464 4.85355C13.7402 4.94732 13.8674 5 14 5C14.1326 5 14.2598 4.94732 14.3536 4.85355C14.4473 4.75979 14.5 4.63261 14.5 4.5V3H17.5C17.8978 3 18.2794 3.15804 18.5607 3.43934C18.842 3.72064 19 4.10218 19 4.5V8Z"
+                                  fill="black"
+                                /></svg
+                              >February 15, 2022</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="blog-post__list">
+                        <a
+                          class="blog-post__link"
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/every-business-owner-must-be-able-to-answer-correctly-10/"
+                        >
+                          <div class="blog-post__image">
+                            <img
+                              loading="lazy"
+                              width="150"
+                              height="150"
+                              src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2021/12/blog01-1-150x150.jpg"
+                              class="attachment-thumbnail size-thumbnail wp-post-image"
+                              alt=""
+                              decoding="async"
+                            />
+                          </div>
+                          <div class="blog-post__content">
+                            <h3 class="blog-post__heading">
+                              Every business owner must be able to answer
+                              correctly
+                            </h3>
+                            <span class="blog-post__date"
+                              ><svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M17.5 2H14.5V0.5C14.5 0.367392 14.4473 0.240215 14.3536 0.146447C14.2598 0.0526785 14.1326 0 14 0C13.8674 0 13.7402 0.0526785 13.6464 0.146447C13.5527 0.240215 13.5 0.367392 13.5 0.5V2H6.5V0.5C6.5 0.367392 6.44732 0.240215 6.35355 0.146447C6.25979 0.0526785 6.13261 0 6 0C5.86739 0 5.74021 0.0526785 5.64645 0.146447C5.55268 0.240215 5.5 0.367392 5.5 0.5V2H2.5C1.8372 2.00079 1.20178 2.26444 0.73311 2.73311C0.264441 3.20178 0.000793929 3.8372 0 4.5V17.5C0.000793929 18.1628 0.264441 18.7982 0.73311 19.2669C1.20178 19.7356 1.8372 19.9992 2.5 20H17.5C18.1629 19.9995 18.7985 19.7359 19.2672 19.2672C19.7359 18.7985 19.9995 18.1629 20 17.5V4.5C19.9995 3.83712 19.7359 3.20154 19.2672 2.73282C18.7985 2.26409 18.1629 2.00053 17.5 2ZM19 17.5C19 17.8978 18.842 18.2794 18.5607 18.5607C18.2794 18.842 17.8978 19 17.5 19H2.5C2.10218 19 1.72064 18.842 1.43934 18.5607C1.15804 18.2794 1 17.8978 1 17.5V9H19V17.5ZM19 8H1V4.5C1 3.672 1.67 3 2.5 3H5.5V4.5C5.5 4.63261 5.55268 4.75979 5.64645 4.85355C5.74021 4.94732 5.86739 5 6 5C6.13261 5 6.25979 4.94732 6.35355 4.85355C6.44732 4.75979 6.5 4.63261 6.5 4.5V3H13.5V4.5C13.5 4.63261 13.5527 4.75979 13.6464 4.85355C13.7402 4.94732 13.8674 5 14 5C14.1326 5 14.2598 4.94732 14.3536 4.85355C14.4473 4.75979 14.5 4.63261 14.5 4.5V3H17.5C17.8978 3 18.2794 3.15804 18.5607 3.43934C18.842 3.72064 19 4.10218 19 4.5V8Z"
+                                  fill="black"
+                                /></svg
+                              >February 15, 2022</span
+                            >
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="categories-2" class="widget widget_categories">
+                    <h3 class="blog-post__title">Categories</h3>
+                    <ul>
+                      <li class="cat-item cat-item-7">
+                        <a
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/category/analysis/"
+                          >Analysis</a
+                        >
+                      </li>
+                      <li class="cat-item cat-item-8">
+                        <a
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/category/app/"
+                          >App</a
+                        >
+                      </li>
+                      <li class="cat-item cat-item-6">
+                        <a
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/category/business/"
+                          >Business</a
+                        >
+                      </li>
+                      <li class="cat-item cat-item-9">
+                        <a
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/category/cryptocurrency/"
+                          >Cryptocurrency</a
+                        >
+                      </li>
+                      <li class="cat-item cat-item-5">
+                        <a
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/category/marketing/"
+                          >Marketing</a
+                        >
+                      </li>
+                      <li class="cat-item cat-item-11">
+                        <a
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/category/mobile/"
+                          >Mobile</a
+                        >
+                      </li>
+                      <li class="cat-item cat-item-10">
+                        <a
+                          href="https://radiustheme.com/demo/wordpress/themes/daisy/category/technology/"
+                          >Technology</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="tag_cloud-2" class="widget widget_tag_cloud">
+                    <h3 class="blog-post__title">Tags</h3>
+                    <div class="tagcloud">
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/tag/analysis/"
+                        class="tag-cloud-link tag-link-12 tag-link-position-1"
+                        style="font-size: 21.282051282051pt"
+                        aria-label="Analysis (10 items)"
+                        >Analysis</a
+                      >
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/tag/app/"
+                        class="tag-cloud-link tag-link-13 tag-link-position-2"
+                        style="font-size: 8pt"
+                        aria-label="App (1 item)"
+                        >App</a
+                      >
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/tag/cryptocurrency/"
+                        class="tag-cloud-link tag-link-15 tag-link-position-3"
+                        style="font-size: 8pt"
+                        aria-label="Cryptocurrency (1 item)"
+                        >Cryptocurrency</a
+                      >
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/tag/digital/"
+                        class="tag-cloud-link tag-link-14 tag-link-position-4"
+                        style="font-size: 22pt"
+                        aria-label="Digital (11 items)"
+                        >Digital</a
+                      >
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/tag/healthcare/"
+                        class="tag-cloud-link tag-link-16 tag-link-position-5"
+                        style="font-size: 8pt"
+                        aria-label="Healthcare (1 item)"
+                        >Healthcare</a
+                      >
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/tag/mobile/"
+                        class="tag-cloud-link tag-link-17 tag-link-position-6"
+                        style="font-size: 8pt"
+                        aria-label="Mobile (1 item)"
+                        >Mobile</a
+                      >
+                      <a
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/tag/technology/"
+                        class="tag-cloud-link tag-link-18 tag-link-position-7"
+                        style="font-size: 21.282051282051pt"
+                        aria-label="Technology (10 items)"
+                        >Technology</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer
+          class="footer footer--style-4 modify-one position-relative overflow-hidden"
+        >
+          <div class="footer-top footer-top--style-4 position-relative">
+            <ul class="element-list d-none d-xl-block">
+              <li>
+                <span
+                  class="d-block wow zoomIn"
+                  data-wow-delay="400ms"
+                  data-wow-duration="2000ms"
+                >
+                  <img
+                    width="372"
+                    height="372"
+                    src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/img/element_77.png"
+                    alt="Daisy"
+                  />
+                </span>
+              </li>
+            </ul>
+            <div class="container">
+              <div class="row gutter-30 justify-content-between">
+                <div
+                  class="col-xl-3 col-md-6 wow fadeInUp footer-widget--style-1 footer-widget--style-2"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div
+                    id="daisy_about-4"
+                    class="footer-widget widget_daisy_about"
+                  >
+                    <div class="footer-widget__logo logo logo--style-2">
+                      <a
+                        class="footer-logo"
+                        href="https://radiustheme.com/demo/wordpress/themes/daisy/"
+                        ><img
+                          loading="lazy"
+                          width="500"
+                          height="134"
+                          src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/uploads/2021/12/footer-logo.png"
+                          class="attachment-full size-full"
+                          alt=""
+                      /></a>
+                    </div>
+                    <p class="footer-widget__text">
+                      We are a boutique digital transformation consultancy and
+                      software development Fusce consectetur erat id enim
+                      element tincidunt. Vestibulum
+                    </p>
+
+                    <ul class="social social--style-2">
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                      <li class="social__item">
+                        <a class="social__link" href="#" target="_blank"
+                          ><i class="fa fa-rss"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-md-6 wow fadeInUp footer-widget--style-1 footer-widget--style-2"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div id="nav_menu-2" class="footer-widget widget_nav_menu">
+                    <h3 class="footer-widget__title">OUR SERVICE</h3>
+                    <div class="menu-our-service-container">
+                      <ul id="menu-our-service" class="menu">
+                        <li
+                          id="menu-item-132"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132"
+                        >
+                          <a href="#">Strategy &#038; Research</a>
+                        </li>
+                        <li
+                          id="menu-item-133"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-133"
+                        >
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li
+                          id="menu-item-134"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"
+                        >
+                          <a href="#">Web Solution</a>
+                        </li>
+                        <li
+                          id="menu-item-135"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"
+                        >
+                          <a href="#">Digital Marketing</a>
+                        </li>
+                        <li
+                          id="menu-item-136"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136"
+                        >
+                          <a href="#">App Design</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-md-6 wow fadeInUp footer-widget--style-1 footer-widget--style-2"
+                  data-wow-delay="600ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div id="nav_menu-3" class="footer-widget widget_nav_menu">
+                    <h3 class="footer-widget__title">OTHERS LINK</h3>
+                    <div class="menu-our-service-container">
+                      <ul id="menu-our-service-1" class="menu">
+                        <li
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-132"
+                        >
+                          <a href="#">Strategy &#038; Research</a>
+                        </li>
+                        <li
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-133"
+                        >
+                          <a href="#">Web Development</a>
+                        </li>
+                        <li
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-134"
+                        >
+                          <a href="#">Web Solution</a>
+                        </li>
+                        <li
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"
+                        >
+                          <a href="#">Digital Marketing</a>
+                        </li>
+                        <li
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136"
+                        >
+                          <a href="#">App Design</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-3 col-md-6 wow fadeInUp footer-widget--style-1 footer-widget--style-2"
+                  data-wow-delay="800ms"
+                  data-wow-duration="1500ms"
+                >
+                  <div
+                    class="contact-form contact-form--style-3 contact-form--style-5 rt-contact-form"
+                  >
+                    <div id="text-2" class="footer-widget widget_text">
+                      <h3 class="footer-widget__title">SUBSCRIBE NOW</h3>
+                      <div class="textwidget">
+                        <div
+                          class="fluentform ff-default fluentform_wrapper_3 ffs_default_wrap"
+                        >
+                          <form
+                            data-form_id="3"
+                            id="fluentform_3"
+                            class="frm-fluent-form fluent_form_3 ff-el-form-top ff_form_instance_3_1 ff-form-loading ffs_default"
+                            data-form_instance="ff_form_instance_3_1"
+                            method="POST"
+                          >
+                            <fieldset
+                              style="
+                                border: none !important;
+                                margin: 0 !important;
+                                padding: 0 !important;
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                                outline: none !important;
+                                min-inline-size: 100%;
+                              "
+                            >
+                              <legend
+                                class="ff_screen_reader_title"
+                                style="
+                                  display: block;
+                                  margin: 0 !important;
+                                  padding: 0 !important;
+                                  height: 0 !important;
+                                  text-indent: -999999px;
+                                  width: 0 !important;
+                                  overflow: hidden;
+                                "
+                              >
+                                Subscribe Form
+                              </legend>
+                              <input
+                                type="hidden"
+                                name="__fluent_form_embded_post_id"
+                                value=""
+                              /><input
+                                type="hidden"
+                                id="_fluentform_3_fluentformnonce"
+                                name="_fluentform_3_fluentformnonce"
+                                value="cf54ad234b"
+                              /><input
+                                type="hidden"
+                                name="_wp_http_referer"
+                                value="/demo/wordpress/themes/daisy/blog/"
+                              />
+                              <div class="ff-el-group form-group">
+                                <div class="ff-el-input--content">
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    id="ff_3_email"
+                                    class="ff-el-form-control form-control rt-form-control"
+                                    placeholder="E-mail"
+                                    data-name="email"
+                                    aria-invalid="false"
+                                    aria-required="true"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="ff-el-group ff-text-center ff_submit_btn_wrapper"
+                              >
+                                <button
+                                  type="submit"
+                                  class="ff-btn ff-btn-submit ff-btn-md rt-btn--10 ff_btn_style wpf_has_custom_css"
+                                >
+                                  SUBSCRIBE NOW
+                                </button>
+                              </div>
+                            </fieldset>
+                          </form>
+                          <div
+                            id="fluentform_3_errors"
+                            class="ff-errors-in-stack ff_form_instance_3_1 ff-form-loading_errors ff_form_instance_3_1_errors"
+                          ></div>
+                        </div>
+                        <script>
+                          window.fluent_form_ff_form_instance_3_1 = {
+                            id: "3",
+                            settings: {
+                              layout: {
+                                labelPlacement: "top",
+                                helpMessagePlacement: "with_label",
+                                errorMessagePlacement: "inline",
+                                asteriskPlacement: "asterisk-right",
+                              },
+                              restrictions: {
+                                denyEmptySubmission: { enabled: false },
+                              },
+                            },
+                            form_instance: "ff_form_instance_3_1",
+                            form_id_selector: "fluentform_3",
+                            rules: {
+                              email: {
+                                required: {
+                                  value: true,
+                                  message: "This field is required",
+                                },
+                                email: {
+                                  value: true,
+                                  message:
+                                    "This field must contain a valid email",
+                                },
+                              },
+                            },
+                          };
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom footer-bottom--style-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <p
+                    class="copyright-text copyright-text--style-2 text-white mb-0 wow fadeInUp"
+                    data-wow-delay="600ms"
+                    data-wow-duration="1500ms"
+                  >
+                    Copyright © 2022 <a href="#" rel="nofollow">Daisy</a> All
+                    Rights Reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- Main Content End -->
+    </div>
+    <!-- Main Wrapper End -->
+
+    <!-- Offcanvas Menu -->
+
+    <div class="offcanvas-menu-wrap" id="offcanvas-wrap" data-position="left">
+      <div class="offcanvas-content">
+        <div class="offcanvas-header">
+          <div class="offcanvas-logo">
+            <a href="https://radiustheme.com/demo/wordpress/themes/daisy/">
+              <img
+                width="180"
+                height="48"
+                src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/img/logo-dark.svg"
+                alt="Daisy"
+              />
+            </a>
+          </div>
+          <div class="close-btn offcanvas-close">
+            <a href="javascript:void(0)">
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-widget">
+          <h3 class="offcanvas-widget-title">About Us</h3>
+          <p>
+            The argument in favor of using filler text goes something like this:
+            If you use arey real content in the Consulting Process anytime you
+            reachtent.
+          </p>
+        </div>
+        <div
+          id="meks_instagram-4"
+          class="widget offcanvas-widget widget_meks_instagram"
+        >
+          <h3 class="offcanvas-widget-title">Instagram</h3>
+          Error validating access token: Session has expired on Friday,
+          25-Aug-23 23:58:20 PDT. The current time is Friday, 21-Feb-25 13:48:50
+          PST.
+        </div>
+        <div class="offcanvas-widget footer-widget">
+          <h3 class="offcanvas-widget-title">Contact Info</h3>
+          <ul class="contact-info-list widget-list">
+            <li class="widget-list-item">
+              <i class="fas fa-map-marker-alt list-icon"></i>
+              Chicago 12,Melborne City,USA
+            </li>
+            <li class="widget-list-item">
+              <i class="fas fa-phone-alt list-icon"></i>
+              <a href="tel:+1485-048-1995" class="widget-list-link">
+                +1 485-048-1995
+              </a>
+            </li>
+            <li class="widget-list-item">
+              <i class="fas fa-envelope list-icon"></i>
+              <a href="mailto:info@demo.com" class="widget-list-link">
+                info@demo.com
+              </a>
+            </li>
+          </ul>
+          <ul class="social social--style-3">
+            <li class="social__item">
+              <a href="#" class="social__link fb" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link fb" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link fb" target="_blank">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link fb" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      const lazyloadRunObserver = () => {
+        const lazyloadBackgrounds = document.querySelectorAll(
+          `.e-con.e-parent:not(.e-lazyloaded)`
+        );
+        const lazyloadBackgroundObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                let lazyloadBackground = entry.target;
+                if (lazyloadBackground) {
+                  lazyloadBackground.classList.add("e-lazyloaded");
+                }
+                lazyloadBackgroundObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "200px 0px 200px 0px" }
+        );
+        lazyloadBackgrounds.forEach((lazyloadBackground) => {
+          lazyloadBackgroundObserver.observe(lazyloadBackground);
+        });
+      };
+      const events = ["DOMContentLoaded", "elementor/lazyload/observe"];
+      events.forEach((event) => {
+        document.addEventListener(event, lazyloadRunObserver);
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      id="fluent-form-styles-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/plugins/fluentform/assets/css/fluent-forms-public.css?ver=5.2.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="fluentform-public-default-css"
+      href="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/plugins/fluentform/assets/css/fluentform-public-default.css?ver=5.2.2"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/plugins/daisy-core/assets/js/daisy-core.js?ver=6.7.2"
+      id="daisy-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-includes/js/imagesloaded.min.js?ver=5.0.0"
+      id="imagesloaded-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/bootstrap.min.js?ver=1.0"
+      id="bootstrap-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/appear.min.js?ver=1.0"
+      id="appear-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/swiper.min.js?ver=1.0"
+      id="swiper-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/wow.min.js?ver=1.0"
+      id="wow-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/magnific-popup.min.js?ver=1.0"
+      id="magnific-popup-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/js-cookie.js?ver=1.0"
+      id="js-cookie-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/style-switcher.js?ver=1.0"
+      id="style-switcher-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/waypoints.min.js?ver=1.0"
+      id="waypoints-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/jquery.counterup.min.js?ver=1.0"
+      id="counterup-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/theia-sticky-sidebar.min.js?ver=1.0"
+      id="theia-sticky-js"
+    ></script>
+    <script type="text/javascript" id="daisy-main-js-extra">
+      /* <![CDATA[ */
+      var DaisyObj = {
+        ajaxurl:
+          "https:\/\/radiustheme.com\/demo\/wordpress\/themes\/daisy\/wp-admin\/admin-ajax.php",
+        hasAdminBar: "0",
+        headerStyle: "5",
+        siteLogo:
+          '<div class="mobile-menu-nav-back"><a class="logo-mobile" href="https:\/\/radiustheme.com\/demo\/wordpress\/themes\/daisy\/" alt="Daisy" class="img-fluid"><img width=\'180\' height=\'48\' src=\'https:\/\/radiustheme.com\/demo\/wordpress\/themes\/daisy\/wp-content\/themes\/daisy\/assets\/img\/logo-dark.svg\' alt=\'Daisy\'><\/a><\/div>',
+        ajaxURL:
+          "https:\/\/radiustheme.com\/demo\/wordpress\/themes\/daisy\/wp-admin\/admin-ajax.php",
+        nonce: "2a3488fc63",
+        rtl: "",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/themes/daisy/assets/js/main.js?ver=1.0"
+      id="daisy-main-js"
+    ></script>
+    <script type="text/javascript" id="fluent-form-submission-js-extra">
+      /* <![CDATA[ */
+      var fluentFormVars = {
+        ajaxUrl:
+          "https:\/\/radiustheme.com\/demo\/wordpress\/themes\/daisy\/wp-admin\/admin-ajax.php",
+        forms: [],
+        step_text: "Step %activeStep% of %totalStep% - %stepTitle%",
+        is_rtl: "",
+        date_i18n: {
+          previousMonth: "Previous Month",
+          nextMonth: "Next Month",
+          months: {
+            shorthand: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+            ],
+            longhand: [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December",
+            ],
+          },
+          weekdays: {
+            longhand: [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ],
+            shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          },
+          daysInMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+          rangeSeparator: " to ",
+          weekAbbreviation: "Wk",
+          scrollTitle: "Scroll to increment",
+          toggleTitle: "Click to toggle",
+          amPM: ["AM", "PM"],
+          yearAriaLabel: "Year",
+          firstDayOfWeek: 1,
+        },
+        pro_version: "",
+        fluentform_version: "5.2.2",
+        force_init: "",
+        stepAnimationDuration: "350",
+        upload_completed_txt: "100% Completed",
+        upload_start_txt: "0% Completed",
+        uploading_txt: "Uploading",
+        choice_js_vars: {
+          noResultsText: "No results found",
+          loadingText: "Loading...",
+          noChoicesText: "No choices to choose from",
+          itemSelectText: "Press to select",
+          maxItemText: "Only %%maxItemCount%% options can be added",
+        },
+        input_mask_vars: { clearIfNotMatch: false },
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="https://radiustheme.com/demo/wordpress/themes/daisy/wp-content/plugins/fluentform/assets/js/form-submission.js?ver=5.2.2"
+      id="fluent-form-submission-js"
+    ></script>
+  </body>
+</html>

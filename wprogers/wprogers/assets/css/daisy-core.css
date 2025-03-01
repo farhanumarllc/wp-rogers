@@ -1,0 +1,9 @@
+.blog-fluid-grid .blog-grid .item-img img {
+    max-width: none;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    width: calc(100% + 45px);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
